@@ -1,0 +1,101 @@
+// Imports
+@import "./variables.scss";
+@import "./keyframes.scss";
+
+@media all and (max-width: 767px){
+
+    // Like
+    @mixin heart{
+        font-size: 150%;
+        font-weight: 25;
+        transform: scale(1) rotate(0deg);
+        transition: font-weight 0.6s cubic-bezier(.66,.19,.04,1) , color 0.5s cubic-bezier(.91,.55,.48,.96) ;
+        &:hover {
+            cursor:pointer;
+            animation-name: growing_heart;
+            animation-duration: 0.4s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            font-weight: bold;
+            color: $secondary;
+        }
+    }
+
+    // spinner
+    .loading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        position:fixed;
+        top: 0;
+        height:100%;
+        width:100%;
+        z-index:4;
+        opacity:1;
+        animation: loading_page 4s linear forwards;
+        &::after{ 
+            content: "";
+            width: 60px;
+            height:60px;
+            border:10px double white;
+            border-radius:50%;
+            border-top-color:$tertiary;
+            animation: loading 3s cubic-bezier(.4,.43,0,.86) infinite;
+            transform:rotate(0deg);
+        }
+    }
+    
+    
+    .pink_btn{
+        height:45px;
+        width: auto;
+        cursor: pointer;
+        min-width: 160px;
+        max-width: 200px;
+        border-radius: 30px;
+        border: 1px $background2ndShade solid;
+        font-size: 90%;
+        box-shadow:0px 3px 4px rgba(128, 128, 128, 0.3) ;
+        color:white;
+        padding-left: 17px;
+        padding-right: 17px;
+        background:radial-gradient(rgba(255, 121, 218),rgba(147, 86, 220)) ;
+        border:#9356DC;
+        margin-bottom: 50px;
+        position:relative;
+        z-index: 1;
+        
+        
+        &:hover{
+            &::after{
+                opacity:1;
+            }   
+        }
+        
+        &::after{
+            content:'';
+            position: absolute;
+            z-index:-1 ;
+            border-radius: 30px;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            opacity:0 ;
+            background: radial-gradient(ellipse at top, $secondary, transparent),  ;
+            border:rgba(255, 21, 218, 0.1);
+            box-shadow:0px 3px 4px rgba(128, 128, 128, 1);
+            transition: opacity 250ms;   
+        }
+    }
+    
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 120%;
+    }
+
+
+}
