@@ -1,0 +1,48 @@
+// Imports
+    // Variables
+
+    // Polices
+    @import "./polices.scss";
+
+    // Pages
+        // Home page
+        @import "./home-page.scss";
+
+    //Components
+        // Header
+        @import"./header.scss";
+        // Footer
+        @import "./footer.scss"; 
+
+
+// Generalities
+
+@media all and (max-width: 767px){
+    // General
+    h1, h2, h3{
+        font-family: 'Roboto', Arial, sans-serif;
+    }
+    
+    h1{
+        padding-left: 10px;
+    }
+    
+    h2{
+        font-size: 95%;
+    }
+    
+    p{
+        color:black
+    }
+    
+    a{
+        text-decoration: none;
+        color:black;
+    }
+    
+    
+    body{
+        font-family: 'Roboto';
+    }
+}
+
