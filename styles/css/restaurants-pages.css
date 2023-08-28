@@ -281,7 +281,7 @@
     transform: scale(1.15);
   }
 }
-@media all and (max-width: 767px) {
+@media (max-width: 767px) {
   .img {
     position: relative;
     z-index: -1;

@@ -2,7 +2,7 @@
 @import "./variables.scss";
 @import "./keyframes.scss";
 
-@media all and (max-width: 767px){
+@media (max-width: 767px){
 
     // spinner
     .loading{

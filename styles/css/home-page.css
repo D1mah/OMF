@@ -16,7 +16,7 @@
   font-style: italic;
   font-display: swap;
 }
-@media all and (max-width: 767px) {
+@media (max-width: 767px) {
   section {
     padding-top: 30px;
     padding-bottom: 55px;
