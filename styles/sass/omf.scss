@@ -1,12 +1,12 @@
 // Imports
-    // Variables
-
-    // Polices
-    @import "./polices.scss";
+    // Variables and font
+    @import "./variables.scss";
 
     // Pages
         // Home page
         @import "./home-page.scss";
+        // Restaurants Page;
+        @import "./restaurants-pages.scss";
 
     //Components
         // Header

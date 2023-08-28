@@ -12,5 +12,34 @@
     font-family: 'Shrikhand';
     font-size:210%;
 
+    &__arrow{
+        flex:1;
+        font-size: 80%;
+        justify-self: left;
+        align-self: center;
+        padding-left: 20px;
+        transform:scale(1) translate(0) ;
+        transition: transform 0.4s cubic-bezier(0,1.04,.54,1.06) ;
+        &:hover{
+            transform: scale(1.15) ;
+            transition-duration: 0.4s;
+        }
+    }
+
+    &__title{
+        // margin: 0 ;
+        flex:1;
+        display:flex;
+        justify-content: center;
+        & p{
+            margin: 0 ; 
+        }
+    }
+    
+    
+    
+    &__third-col{
+        flex:1;
+    }    
 }
 }
