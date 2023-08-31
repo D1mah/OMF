@@ -373,7 +373,7 @@ section {
     margin-left: unset;
   }
   .example {
-    width: 790px;
+    width: 780px;
     margin: auto;
     display: grid;
     grid-template-columns: 360px 360px;
@@ -410,11 +410,14 @@ section {
   .example__btn-1 {
     background-position: 0px -55px;
   }
+  .example__btn-2 {
+    background-position: 0px -170px;
+  }
   .example__btn-3 {
-    background-position: 0px -65px;
+    background-position: 0px -55px;
   }
   .example__btn-4 {
-    background-position: 0px -65px;
+    background-position: 0px -80px;
   }
 }
 @media (min-width: 992px) {
@@ -445,6 +448,7 @@ section {
     padding-left: unset;
     margin-left: unset;
     padding-right: 40px;
+    font-size: 125%;
   }
   .choices__btn2 {
     width: 320px;
@@ -455,6 +459,7 @@ section {
     padding-left: unset;
     margin-left: unset;
     padding-right: 40px;
+    font-size: 125%;
   }
   .choices__btn3 {
     width: 320px;
@@ -465,6 +470,7 @@ section {
     padding-left: unset;
     margin-left: unset;
     padding-right: 40px;
+    font-size: 125%;
   }
   .restaurant {
     width: 100%;
@@ -503,13 +509,16 @@ section {
     grid-row: 3/4;
   }
   .example__btn-1 {
-    background-position: 0px -55px;
+    background-position: 0px -75px;
+  }
+  .example__btn-2 {
+    background-position: 0px -250px;
   }
   .example__btn-3 {
-    background-position: 0px -65px;
+    background-position: 0px -100px;
   }
   .example__btn-4 {
-    background-position: 0px -65px;
+    background-position: 0px -115px;
   }
   .example__description {
     padding-left: 10px;
@@ -1310,6 +1319,74 @@ section {
   padding-top: 15px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .img {
+    width: 100%;
+    height: 385px;
+    overflow: hidden;
+  }
+  .img--size {
+    max-width: 100%;
+    position: absolute;
+    top: -80px;
+  }
+  .menu {
+    max-width: 700px;
+    margin: auto;
+  }
+  .menu__name {
+    justify-content: center;
+  }
+  .menu__name h1 {
+    padding-right: 25px;
+  }
+  .menu__categorie1 {
+    width: 634px;
+    margin: auto;
+  }
+  .menu__categorie2 {
+    width: 634px;
+    margin: auto;
+  }
+  .menu__categorie3 {
+    width: 634px;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .img {
+    width: 100%;
+    height: 385px;
+    overflow: hidden;
+  }
+  .img--size {
+    max-width: 100%;
+    position: absolute;
+    top: -350px;
+  }
+  .menu {
+    max-width: 1050px;
+    margin: auto;
+  }
+  .menu__name {
+    justify-content: center;
+  }
+  .menu__name h1 {
+    padding-right: 25px;
+  }
+  .menu__categorie1 {
+    width: 634px;
+    margin: auto;
+  }
+  .menu__categorie2 {
+    width: 634px;
+    margin: auto;
+  }
+  .menu__categorie3 {
+    width: 634px;
+    margin: auto;
+  }
+}
 .header {
   display: flex;
   flex-direction: row;
@@ -1335,6 +1412,7 @@ section {
   transition-duration: 0.4s;
 }
 .header__title {
+  margin: 0;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -1372,10 +1450,11 @@ section {
   color: white;
   text-decoration: none;
 }
-.footer h2 {
+.footer__anchor {
   font-family: "Shrikhand";
   font-weight: lighter;
   font-size: 120%;
+  color: white;
 }
 .footer a {
   color: white;
@@ -1396,11 +1475,12 @@ section {
   align-items: center;
   justify-content: center;
 }
-.footer p {
+.footer--resp p {
   color: white;
   padding-left: 13px;
   margin-top: 0px;
   margin-bottom: 0px;
+  font-size: 90%;
 }
 
 @media (min-width: 768px) {
@@ -1410,16 +1490,19 @@ section {
     flex-direction: row-reverse;
     align-items: flex-end;
   }
-  .footer h2 {
+  .footer__anchor {
     margin: 0px 10px 0px 0px;
-    margin-bottom: -5px;
+    margin-bottom: -3px;
+    padding-left: 20px;
+    font-size: 125%;
   }
   .footer a {
-    padding-left: 15px;
+    padding-left: 25px;
   }
   .footer--resp {
     display: flex;
     flex-direction: row;
+    font-size: 100%;
   }
   .footer:nth-child(2) {
     order: 1;
@@ -1432,6 +1515,11 @@ section {
   }
   .footer:nth-child(5) {
     order: 4;
+  }
+}
+@media (min-width: 991px) {
+  .footer--resp {
+    font-size: 125%;
   }
 }
 /* Mise en place des différentes polices utilisées */

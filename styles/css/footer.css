@@ -25,10 +25,11 @@
   color: white;
   text-decoration: none;
 }
-.footer h2 {
+.footer__anchor {
   font-family: "Shrikhand";
   font-weight: lighter;
   font-size: 120%;
+  color: white;
 }
 .footer a {
   color: white;
@@ -49,11 +50,12 @@
   align-items: center;
   justify-content: center;
 }
-.footer p {
+.footer--resp p {
   color: white;
   padding-left: 13px;
   margin-top: 0px;
   margin-bottom: 0px;
+  font-size: 90%;
 }
 
 @media (min-width: 768px) {
@@ -63,16 +65,19 @@
     flex-direction: row-reverse;
     align-items: flex-end;
   }
-  .footer h2 {
+  .footer__anchor {
     margin: 0px 10px 0px 0px;
-    margin-bottom: -5px;
+    margin-bottom: -3px;
+    padding-left: 20px;
+    font-size: 125%;
   }
   .footer a {
-    padding-left: 15px;
+    padding-left: 25px;
   }
   .footer--resp {
     display: flex;
     flex-direction: row;
+    font-size: 100%;
   }
   .footer:nth-child(2) {
     order: 1;
@@ -85,5 +90,10 @@
   }
   .footer:nth-child(5) {
     order: 4;
+  }
+}
+@media (min-width: 991px) {
+  .footer--resp {
+    font-size: 125%;
   }
 }/*# sourceMappingURL=footer.css.map */

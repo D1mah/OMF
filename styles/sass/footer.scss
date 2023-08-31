@@ -12,10 +12,11 @@
     color:white;
     text-decoration: none;
     
-    & h2{
+    &__anchor{
         font-family: 'Shrikhand';
         font-weight: lighter;
         font-size: 120%;
+        color: white;
     }
 
     & a{
@@ -39,34 +40,39 @@
         justify-content: center;
         
     }
-    
-    & p{
+    &--resp{
+        & p{
         color:white;
         padding-left: 13px;
         margin-top:0px ;
         margin-bottom: 0px;
-    }
+        font-size: 90%;
+    }}
 }
 
-@media (min-width: 768px){
+// Footer
+@media (min-width: 768px) {
     .footer{
         height:115px;
         display:flex;
         flex-direction: row-reverse;
         align-items: flex-end;
 
-        & h2{
+        &__anchor{
             margin: 0px 10px 0px 0px;
-            margin-bottom: -5px;
+            margin-bottom: -3px;
+            padding-left: 20px;
+            font-size: 125%;
         }
 
         & a{
-            padding-left:15px ;
+            padding-left:25px ;
         }
 
         &--resp{
             display:flex;
             flex-direction: row;
+            font-size: 100%;
         }
 
 
@@ -86,4 +92,13 @@
             order:4;
         }
     }
+}
+
+@media (min-width: 991px){
+    .footer {
+        &--resp{
+        font-size: 125%;
+        }
+
+}
 }
