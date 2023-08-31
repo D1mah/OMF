@@ -249,6 +249,7 @@ section {
   border-radius: 17px;
   box-shadow: 0px 2px 2px lightgray;
   transition: box-shadow 0.3s ease-out;
+  position: relative;
 }
 .example__btn-img {
   width: 100%;
@@ -739,13 +740,20 @@ section {
 }
 
 .newness {
-  align-self: flex-end;
-  vertical-align: top;
   background-color: #99E2D0;
-  position: relative;
-  top: 40px;
+  position: absolute;
+  top: 13px;
+  right: 20px;
   width: 80px;
   height: 30px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newness p {
+  color: #008766;
+  font-size: 90%;
 }
 
 @media (min-width: 768px) {
@@ -1726,13 +1734,20 @@ section {
 }
 
 .newness {
-  align-self: flex-end;
-  vertical-align: top;
   background-color: #99E2D0;
-  position: relative;
-  top: 40px;
+  position: absolute;
+  top: 13px;
+  right: 20px;
   width: 80px;
   height: 30px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newness p {
+  color: #008766;
+  font-size: 90%;
 }
 
 @media (min-width: 768px) {

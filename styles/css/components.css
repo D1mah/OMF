@@ -193,13 +193,20 @@
 }
 
 .newness {
-  align-self: flex-end;
-  vertical-align: top;
   background-color: #99E2D0;
-  position: relative;
-  top: 40px;
+  position: absolute;
+  top: 13px;
+  right: 20px;
   width: 80px;
   height: 30px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newness p {
+  color: #008766;
+  font-size: 90%;
 }
 
 @media (min-width: 768px) {
