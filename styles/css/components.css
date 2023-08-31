@@ -192,6 +192,16 @@
   font-size: 120%;
 }
 
+.newness {
+  align-self: flex-end;
+  vertical-align: top;
+  background-color: #99E2D0;
+  position: relative;
+  top: 40px;
+  width: 80px;
+  height: 30px;
+}
+
 @media (min-width: 768px) {
   .icon {
     margin-left: 15px;
