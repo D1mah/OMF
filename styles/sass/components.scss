@@ -2,7 +2,7 @@
 @import "./variables.scss";
 @import "./keyframes.scss";
 
-@media (max-width: 767px){
+
 
     // spinner
     .loading{
@@ -81,4 +81,8 @@
     }
 
 
-}
+    @media (min-width:768px){
+        .icon{
+            margin-left:15px;
+        }
+    }

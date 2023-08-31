@@ -19,7 +19,7 @@
 
 // Home Page Specificities
 
-@media (max-width: 767px){
+
     
     section{
         padding-top: 30px;
@@ -77,63 +77,69 @@
     .choices{
         display:flex;
         flex-direction: column;
-        align-items:center ;
         background-color: #ffffff;
         
-        & h1{
+        & h2{
             align-self: flex-start;
         }
         
-        @for $i from 1 through 3{
-            &__btn#{$i}{
-                width: 320px;
-                height:65px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin-bottom: 25px;
-                padding-left:35px;
-                background-color: $background2ndShade;
-                border: 1px $background2ndShade solid;
-                border-radius:18px ;
-                box-shadow:0px 3px 4px  grey ;
-                position:relative;
-                
-                &::before{
-                    content:'#{$i}';
+        &__btn{
+            display:flex;
+            flex-direction:column;
+            align-items:center ;
+            justify-content: space-between;
+
+            @for $i from 1 through 3{
+                &#{$i}{
+                    width: 300px;
+                    height:65px;
                     display: flex;
-                    justify-content: center;
+                    flex-direction: row;
                     align-items: center;
-                    color:white;
-                    position:absolute;
-                    left:-12px;
-                    top:35%;
-                    width:23px;
-                    height:23px;
-                    border-radius: 50%;
-                    background-color: $primary;
-                }
-                
-                
-                
-                &-txt{
-                    margin-left:15px;
-                    padding-left: 15px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-start ;
-                    font-weight: bold;
-                    font-size: 110%;
-                }
-                
-                &:hover{
-                    background-color: rgba(245,237,255,255); 
-                    opacity: 0,5;
-                    color:$primary;
-                    border:rgba(245,237,255,255);
-                    box-shadow:0px 4px 5px  grey ;
+                    margin-bottom: 25px;
+                    padding-left:35px;
+                    background-color: $background2ndShade;
+                    border: 1px $background2ndShade solid;
+                    border-radius:18px ;
+                    box-shadow:0px 3px 4px  grey ;
+                    position:relative;
                     
+                    &::before{
+                        content:'#{$i}';
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color:white;
+                        position:absolute;
+                        left:-12px;
+                        top:35%;
+                        width:23px;
+                        height:23px;
+                        border-radius: 50%;
+                        background-color: $primary;
+                    }
+                    
+                    
+                    
+                    &-txt{
+                        margin-left:15px;
+                        padding-left: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start ;
+                        font-weight: bold;
+                        font-size: 110%;
+                    }
+                    
+                    &:hover{
+                        background-color: rgba(245,237,255,255); 
+                        opacity: 0,5;
+                        color:$primary;
+                        border:rgba(245,237,255,255);
+                        box-shadow:0px 4px 5px  grey ;
+                        
+                    }
                 }
             }
             
@@ -249,5 +255,210 @@
                         }
                     }
                 }
+
+                // Responsivity tablet 
                 
+@media (min-width:768px) and (max-width:991px){
+    .choices{
+        & h2{
+            margin-top: 0px;
+
+        }
+        &__btn{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left:11px;
+            @for $i from 1 through 3{
+                &#{$i}{
+                    width: 250px;
+                    padding-left: unset;
+                    justify-content: space-around;
+                    
+                    &-txt{
+                        padding-left: unset;
+                        margin-left: unset;
+                    }
+                }
             }
+        }
+    }
+    
+    .example{
+        width:790px;
+        margin:auto;
+        display: grid;
+        grid-template-columns: 360px 360px;
+        grid-template-rows: 30px 230px 230px;
+        row-gap: 30px;
+        padding-right: 10px;
+    
+
+        & h2{
+            margin-bottom:30px;
+            margin-left:0px;
+        }
+
+        &__btn{
+            width:100%;
+            height:100%;  
+            
+            &:nth-child(2){
+                grid-column: 1/2;
+                grid-row:2/3;
+                margin-left:10px;
+
+            }
+    
+            &:nth-child(3){
+                grid-column: 2/3;
+                grid-row:2/3;
+            }
+    
+            &:nth-child(4){
+                grid-column: 1/2;
+                grid-row:3/4;
+                margin-left:10px;
+
+            }
+    
+            &:nth-child(5){
+                grid-column: 2/3;
+                    grid-row:3/4;
+
+            }
+            &-1{
+                background-position: 0px -55px;
+            }
+
+
+            &-3{
+                background-position: 0px -65px;
+            }
+
+            &-4{
+                background-position: 0px -65px;
+            }
+        }
+    }
+
+}
+                // Responsivity desktop
+@media (min-width: 992px){
+
+.where{
+    width:100%;
+    margin:auto;
+}
+
+.explore{
+    width:100%;
+    margin:auto;
+}
+
+.choices{
+    width:1080px;
+    margin:auto;
+
+    &__btn{
+        width:1053px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+
+        @for $i from 1 through 3{
+            &#{$i}{
+                width: 320px;
+                padding-left: unset;
+                justify-content: space-around;
+            
+                &-txt{
+                    padding-left: unset;
+                    margin-left: unset;
+                    padding-right: 40px;
+                }
+            
+            }
+
+    }
+
+}
+}
+
+
+    .restaurant{
+        width:100%;
+        margin:auto;
+    }
+
+    .example{
+        width:1080px;
+        margin:auto;
+        display: grid;
+        grid-template-columns: 490px 490px;
+        grid-template-rows: 30px 251px 251px;
+        row-gap: 50px;
+        column-gap: 100px;
+
+        & h2{
+            margin-bottom:0px;
+        }
+
+        
+
+        &__btn{
+            width:100%;
+            height:100%;  
+            
+
+            &:nth-child(2){
+                grid-column: 1/2;
+                grid-row:2/3;
+            }
+    
+            &:nth-child(3){
+                grid-column: 2/3;
+                grid-row:2/3;
+            }
+    
+            &:nth-child(4){
+                grid-column: 1/2;
+                grid-row:3/4;
+            }
+    
+            &:nth-child(5){
+                grid-column: 2/3;
+                    grid-row:3/4;
+            }
+            
+            &-1{
+                background-position: 0px -55px;
+            }
+
+
+            &-3{
+                background-position: 0px -65px;
+            }
+
+            &-4{
+                background-position: 0px -65px;
+            }
+        
+        }
+
+        &__description{
+            padding-left:10px;
+            padding-right: 10px;
+            &-text{
+                & p{
+                    font-size:105%;
+                }
+            }
+        }
+    }
+
+
+
+
+
+}

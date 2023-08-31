@@ -16,6 +16,23 @@
   font-style: italic;
   font-display: swap;
 }
+/* Mise en place des différentes polices utilisées */
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/polices/Roboto/Roboto-Regular.eot");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/polices/Roboto/Roboto-Regular.woff2") format("woff2"), url("../../assets/polices/Roboto/Roboto-Regular.woff") format("woff"), url("../../assets/polices/Roboto/Roboto-Regular.ttf") format("truetype"), url("../../assets/polices/Roboto/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.eot");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff2") format("woff2"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff") format("woff"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.ttf") format("truetype"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.svg#Shrikhand-Regular") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
 @keyframes loading_page {
   from {
     opacity: 1;
@@ -106,71 +123,77 @@
     transform: scale(1.15);
   }
 }
-@media (max-width: 767px) {
-  .loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 4;
-    opacity: 1;
-    animation: loading_page 4s linear forwards;
-  }
-  .loading::after {
-    content: "";
-    width: 60px;
-    height: 60px;
-    border: 10px double white;
-    border-radius: 50%;
-    border-top-color: #99E2D0;
-    animation: loading 3s cubic-bezier(0.4, 0.43, 0, 0.86) infinite;
-    transform: rotate(0deg);
-  }
-  .pink_btn {
-    height: 45px;
-    width: auto;
-    cursor: pointer;
-    min-width: 160px;
-    max-width: 200px;
-    border-radius: 30px;
-    border: 1px #f6f6f6 solid;
-    font-size: 90%;
-    box-shadow: 0px 3px 4px rgba(128, 128, 128, 0.3);
-    color: white;
-    padding-left: 17px;
-    padding-right: 17px;
-    background: radial-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
-    border: #9356DC;
-    margin-bottom: 50px;
-    position: relative;
-    z-index: 1;
-  }
-  .pink_btn:hover::after {
-    opacity: 1;
-  }
-  .pink_btn::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    border-radius: 30px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    background: radial-gradient(ellipse at top, #FF79DA, transparent);
-    border: rgba(255, 21, 218, 0.1);
-    box-shadow: 0px 3px 4px rgb(128, 128, 128);
-    transition: opacity 250ms;
-  }
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  opacity: 1;
+  animation: loading_page 4s linear forwards;
+}
+.loading::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border: 10px double white;
+  border-radius: 50%;
+  border-top-color: #99E2D0;
+  animation: loading 3s cubic-bezier(0.4, 0.43, 0, 0.86) infinite;
+  transform: rotate(0deg);
+}
+
+.pink_btn {
+  height: 45px;
+  width: auto;
+  cursor: pointer;
+  min-width: 160px;
+  max-width: 200px;
+  border-radius: 30px;
+  border: 1px #f6f6f6 solid;
+  font-size: 90%;
+  box-shadow: 0px 3px 4px rgba(128, 128, 128, 0.3);
+  color: white;
+  padding-left: 17px;
+  padding-right: 17px;
+  background: radial-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+  border: #9356DC;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+.pink_btn:hover::after {
+  opacity: 1;
+}
+.pink_btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 30px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background: radial-gradient(ellipse at top, #FF79DA, transparent);
+  border: rgba(255, 21, 218, 0.1);
+  box-shadow: 0px 3px 4px rgb(128, 128, 128);
+  transition: opacity 250ms;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+}
+
+@media (min-width: 768px) {
   .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 120%;
+    margin-left: 15px;
   }
 }/*# sourceMappingURL=components.css.map */
