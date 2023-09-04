@@ -2,9 +2,52 @@
 @import "./variables.scss";
 @import "./keyframes.scss";
 
+ // Like - Heart
+//  Utilisation d'une mixin pour rajouter une animation au remplissage des coeurs lors du hover.
+ @mixin heart{    
+    position:relative;
+    z-index: 100;
+    font-size: 150%;
+    font-weight: 100;
+    transform: scale(1) rotate(0deg);
+    transition: font-weight 0.6s cubic-bezier(.66,.19,.04,1) , color 0.5s cubic-bezier(.91,.55,.48,.96) ;
+    &:hover {
+        cursor:pointer;
+        animation-name: growing_heart;
+        animation-duration: 0.4s;
+        animation-timing-function: ease;
+        animation-fill-mode: backwards ;
+        // font-weight: bold;
+        // color: $secondary;
+    }
+}
 
+.heart-container{
+    // Rajout d'une animation pour retarder l'apparition des coeur lors du loading (autrement présent dès le début, car déjà concerné par une animation. Placé dans conteneur, plutot que sur le coeur pour les même raison.
+    animation: emerging_element 2.3s;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:20px;
+}
 
-    // spinner
+    .heart-color{
+        @include heart;
+        // font-size: 1.6em;
+        z-index: 100;
+        cursor: pointer;
+        // font-weight: 100;
+        &:hover:before{
+            transition: all .8s ease-in-out;
+            background-clip: text;
+            font-weight: 900;
+            background-image: linear-gradient(rgba(255, 121, 218),rgba(147, 86, 220));
+            -webkit-text-fill-color: transparent;
+          }
+      
+    }   
+
+    // loading & spinner
     .loading{
         display: flex;
         justify-content: center;
@@ -16,7 +59,7 @@
         width:100%;
         z-index:4;
         opacity:1;
-        animation: loading_page 4s linear forwards;
+        animation: loading_page 3s linear forwards;
         &::after{ 
             content: "";
             width: 60px;
@@ -31,6 +74,7 @@
     
     
     .pink_btn{
+        animation: emerging_element 2.4s;
         height:45px;
         width: auto;
         cursor: pointer;
@@ -81,7 +125,6 @@
     }
 
     .newness{
-        // align-self: flex-end;
         background-color: $tertiary;
         position:absolute;
         top:13px;
@@ -97,6 +140,9 @@
         font-size:90%;
         }
     }
+
+
+
 
     @media (min-width:768px){
         .icon{

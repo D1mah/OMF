@@ -1,5 +1,6 @@
 @import "./variables.scss";
 
+<<<<<<< HEAD
  // Like
  @mixin heart{
     font-size: 150%;
@@ -19,6 +20,9 @@
         // background: linear-gradient(to top, rgba(255, 121, 218),rgba(147, 86, 220));
     }
 }
+=======
+
+>>>>>>> homePage_dev
 
 // Home Page Specificities
 
@@ -253,9 +257,7 @@
                         align-items: center;
                         margin-right: 15px;
                         
-                        
-                        & i{
-                            @include heart;}
+                    
                         }
                     }
                 }
