@@ -17,6 +17,12 @@
     100%{transform:rotate(1080deg);border-top-color: $tertiary;}
 }
 
+@keyframes emerging_element {
+    from {opacity:0;}
+    80%{opacity:0;}
+    to {opacity:1;}
+}
+
 @keyframes emerge{
     from {opacity:0;}
     to {opacity:1;}

@@ -54,6 +54,17 @@
     border-top-color: #99E2D0;
   }
 }
+@keyframes emerging_element {
+  from {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes emerge {
   from {
     opacity: 0;
