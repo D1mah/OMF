@@ -25,10 +25,22 @@
 .heart-container{
     // Rajout d'une animation pour retarder l'apparition des coeur lors du loading (autrement présent dès le début, car déjà concerné par une animation. Placé dans conteneur, plutot que sur le coeur pour les même raison.
     animation: emerging_element 2.3s;
+    flex:1;
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin-right:20px;
+    padding-left: 25px;
+
+    &-home{
+        animation: emerging_element 2.3s;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-right:20px;
+        // padding-left: 25px;
+    }
+
 }
 
     .heart-color{

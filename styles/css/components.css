@@ -136,6 +136,15 @@
 }
 .heart-container {
   animation: emerging_element 2.3s;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 20px;
+  padding-left: 25px;
+}
+.heart-container-home {
+  animation: emerging_element 2.3s;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -88,6 +88,17 @@
     border-top-color: #99E2D0;
   }
 }
+@keyframes emerging_element {
+  from {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes emerge {
   from {
     opacity: 0;
@@ -140,6 +151,49 @@
     transform: scale(1.15);
   }
 }
+.heart-container {
+  animation: emerging_element 2.3s;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 20px;
+  padding-left: 25px;
+}
+.heart-container-home {
+  animation: emerging_element 2.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  padding-left: 25px;
+}
+
+.heart-color {
+  position: relative;
+  z-index: 100;
+  font-size: 150%;
+  font-weight: 100;
+  transform: scale(1) rotate(0deg);
+  transition: font-weight 0.6s cubic-bezier(0.66, 0.19, 0.04, 1), color 0.5s cubic-bezier(0.91, 0.55, 0.48, 0.96);
+  z-index: 100;
+  cursor: pointer;
+}
+.heart-color:hover {
+  cursor: pointer;
+  animation-name: growing_heart;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards;
+}
+.heart-color:hover:before {
+  transition: all 0.8s ease-in-out;
+  background-clip: text;
+  font-weight: 900;
+  background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+  -webkit-text-fill-color: transparent;
+}
+
 .loading {
   display: flex;
   justify-content: center;
@@ -151,7 +205,7 @@
   width: 100%;
   z-index: 4;
   opacity: 1;
-  animation: loading_page 4s linear forwards;
+  animation: loading_page 3s linear forwards;
 }
 .loading::after {
   content: "";
@@ -165,6 +219,7 @@
 }
 
 .pink_btn {
+  animation: emerging_element 2.4s;
   height: 45px;
   width: auto;
   cursor: pointer;
@@ -177,7 +232,7 @@
   color: white;
   padding-left: 17px;
   padding-right: 17px;
-  background: radial-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+  background: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
   border: #9356DC;
   margin-bottom: 50px;
   position: relative;
@@ -207,6 +262,23 @@
   justify-content: center;
   align-items: center;
   font-size: 120%;
+}
+
+.newness {
+  background-color: #99E2D0;
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  width: 80px;
+  height: 30px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newness p {
+  color: #008766;
+  font-size: 90%;
 }
 
 @media (min-width: 768px) {
@@ -267,6 +339,17 @@
   100% {
     transform: rotate(1080deg);
     border-top-color: #99E2D0;
+  }
+}
+@keyframes emerging_element {
+  from {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 @keyframes emerge {
@@ -354,21 +437,6 @@
 .menu__name h1 {
   font-family: "Shrikhand";
   font-size: 200%;
-}
-.menu__name i {
-  font-size: 150%;
-  font-weight: 25;
-  transform: scale(1) rotate(0deg);
-  transition: font-weight 0.6s cubic-bezier(0.66, 0.19, 0.04, 1), color 0.5s cubic-bezier(0.91, 0.55, 0.48, 0.96);
-}
-.menu__name i:hover {
-  cursor: pointer;
-  animation-name: growing_heart;
-  animation-duration: 0.4s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  font-weight: bold;
-  color: #FF79DA;
 }
 .menu__categorie1 {
   display: flex;
@@ -809,7 +877,10 @@
     justify-content: center;
   }
   .menu__name h1 {
+    flex: 2;
     padding-right: 25px;
+    display: flex;
+    justify-content: flex-end;
   }
   .menu__categorie1 {
     width: 634px;
@@ -843,7 +914,9 @@
     justify-content: center;
   }
   .menu__name h1 {
-    padding-right: 25px;
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
   }
   .menu__categorie1 {
     width: 634px;

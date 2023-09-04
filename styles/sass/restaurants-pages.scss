@@ -225,7 +225,10 @@
             justify-content: center;
             
             & h1{
+                flex:2;
                 padding-right: 25px; 
+                display: flex;
+                justify-content: flex-end;
             }
         }
 
@@ -267,10 +270,14 @@
 
 
         &__name{
+            
             justify-content: center;
             
             & h1{
-                padding-right: 25px; 
+                flex:2;
+                // padding-right: 25px; 
+                display: flex;
+                justify-content: flex-end;
             }
         }
 
