@@ -707,7 +707,7 @@ section {
   color: white;
   padding-left: 17px;
   padding-right: 17px;
-  background: radial-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+  background: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
   border: #9356DC;
   margin-bottom: 50px;
   position: relative;
@@ -1701,7 +1701,7 @@ section {
   color: white;
   padding-left: 17px;
   padding-right: 17px;
-  background: radial-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+  background: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
   border: #9356DC;
   margin-bottom: 50px;
   position: relative;

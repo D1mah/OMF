@@ -13,7 +13,10 @@
         animation-timing-function: ease;
         animation-fill-mode: forwards;
         font-weight: bold;
-        color: $secondary;
+        color:$secondary;
+        // color:transparent;
+        // background-clip: text;
+        // background: linear-gradient(to top, rgba(255, 121, 218),rgba(147, 86, 220));
     }
 }
 
