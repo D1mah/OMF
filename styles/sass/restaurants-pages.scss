@@ -71,14 +71,15 @@
             @for $i from 1 through $nbOfBtnMax{
                 & button:nth-of-type(#{$i}){
                     animation-name: emerge;
-                    animation-duration:2s;
+                    animation-duration:3s;
                     animation-fill-mode: forwards;
-                    animation-delay: 0.5s + $i*0.4s;
+                    animation-delay: 2s + $i*0.4s;
                 }
             }
             
             &__btn{
                 width:100%;
+                height:80px;
                 display:flex ;
                 flex-direction:row;
                 justify-content:space-between ;
@@ -122,7 +123,8 @@
                             display:inline-block;
                             white-space: nowrap;    
                             overflow: hidden;                   
-                            text-overflow:ellipsis;                               
+                            text-overflow:ellipsis; 
+                            font-weight: bold;                              
                         }
                         
                         & p{
@@ -151,6 +153,7 @@
                 }
                 &__check{
                     font-size: 200%;
+                    height: 100%;
                     border-radius: 0 17px 17px 0;
                     border:0 1px 1px 1px solid $tertiary;
                     color:white;
@@ -225,12 +228,18 @@
             justify-content: center;
             
             & h1{
-                flex:2;
+                // flex:2;
                 padding-right: 25px; 
                 display: flex;
-                justify-content: flex-end;
+                justify-content: center;
             }
         }
+    .heart-container{
+        flex:unset;
+        justify-content: center;
+        margin-right:-15px;
+        padding-left: 0;
+    }
 
         @for $i from 1 through 3{
             &__categorie#{$i}{

@@ -52,9 +52,12 @@
         &:hover:before{
             transition: all .8s ease-in-out;
             background-clip: text;
+            -webkit-background-clip: text;
             font-weight: 900;
             background-image: linear-gradient(rgba(255, 121, 218),rgba(147, 86, 220));
+            // background-color: transparent;
             -webkit-text-fill-color: transparent;
+            // color:transparent;
           }
       
     }   
@@ -71,7 +74,7 @@
         width:100%;
         z-index:4;
         opacity:1;
-        animation: loading_page 3s linear forwards;
+        animation: loading_page 2.5s linear forwards;
         &::after{ 
             content: "";
             width: 60px;
@@ -79,7 +82,7 @@
             border:10px double white;
             border-radius:50%;
             border-top-color:$tertiary;
-            animation: loading 3s cubic-bezier(.4,.43,0,.86) infinite;
+            animation: spinner 2.5s cubic-bezier(.4,.43,0,.86) infinite;
             transform:rotate(0deg);
         }
     }

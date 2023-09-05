@@ -54,14 +54,11 @@
   from {
     opacity: 1;
   }
-  60% {
+  75% {
     opacity: 1;
   }
-  70% {
-    opacity: 0.2;
-  }
   80% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   90% {
     opacity: 0.8;
@@ -70,7 +67,7 @@
     z-index: -2;
   }
 }
-@keyframes loading {
+@keyframes spinner {
   from {
     transform: rotate(0deg);
     border-top-color: #99E2D0;
@@ -166,7 +163,6 @@
   align-items: center;
   justify-content: center;
   margin-right: 20px;
-  padding-left: 25px;
 }
 
 .heart-color {
@@ -189,6 +185,7 @@
 .heart-color:hover:before {
   transition: all 0.8s ease-in-out;
   background-clip: text;
+  -webkit-background-clip: text;
   font-weight: 900;
   background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
   -webkit-text-fill-color: transparent;
@@ -205,7 +202,7 @@
   width: 100%;
   z-index: 4;
   opacity: 1;
-  animation: loading_page 3s linear forwards;
+  animation: loading_page 2.5s linear forwards;
 }
 .loading::after {
   content: "";
@@ -214,7 +211,7 @@
   border: 10px double white;
   border-radius: 50%;
   border-top-color: #99E2D0;
-  animation: loading 3s cubic-bezier(0.4, 0.43, 0, 0.86) infinite;
+  animation: spinner 2.5s cubic-bezier(0.4, 0.43, 0, 0.86) infinite;
   transform: rotate(0deg);
 }
 
@@ -307,14 +304,11 @@
   from {
     opacity: 1;
   }
-  60% {
+  75% {
     opacity: 1;
   }
-  70% {
-    opacity: 0.2;
-  }
   80% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   90% {
     opacity: 0.8;
@@ -323,7 +317,7 @@
     z-index: -2;
   }
 }
-@keyframes loading {
+@keyframes spinner {
   from {
     transform: rotate(0deg);
     border-top-color: #99E2D0;
@@ -455,30 +449,31 @@
 }
 .menu__categorie1 button:nth-of-type(1) {
   animation-name: emerge;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 0.9s;
+  animation-delay: 2.4s;
 }
 .menu__categorie1 button:nth-of-type(2) {
   animation-name: emerge;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 1.3s;
+  animation-delay: 2.8s;
 }
 .menu__categorie1 button:nth-of-type(3) {
   animation-name: emerge;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 1.7s;
+  animation-delay: 3.2s;
 }
 .menu__categorie1 button:nth-of-type(4) {
   animation-name: emerge;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 2.1s;
+  animation-delay: 3.6s;
 }
 .menu__categorie1__btn {
   width: 100%;
+  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -522,6 +517,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: bold;
 }
 .menu__categorie1__btn__detail-txt p {
   max-width: 100%;
@@ -544,6 +540,7 @@
 }
 .menu__categorie1__btn__check {
   font-size: 200%;
+  height: 100%;
   border-radius: 0 17px 17px 0;
   border: 0 1px 1px 1px solid #99E2D0;
   color: white;
@@ -592,30 +589,31 @@
 }
 .menu__categorie2 button:nth-of-type(1) {
   animation-name: emerge;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 0.9s;
+  animation-delay: 2.4s;
 }
 .menu__categorie2 button:nth-of-type(2) {
   animation-name: emerge;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 1.3s;
+  animation-delay: 2.8s;
 }
 .menu__categorie2 button:nth-of-type(3) {
   animation-name: emerge;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 1.7s;
+  animation-delay: 3.2s;
 }
 .menu__categorie2 button:nth-of-type(4) {
   animation-name: emerge;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 2.1s;
+  animation-delay: 3.6s;
 }
 .menu__categorie2__btn {
   width: 100%;
+  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -659,6 +657,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: bold;
 }
 .menu__categorie2__btn__detail-txt p {
   max-width: 100%;
@@ -681,6 +680,7 @@
 }
 .menu__categorie2__btn__check {
   font-size: 200%;
+  height: 100%;
   border-radius: 0 17px 17px 0;
   border: 0 1px 1px 1px solid #99E2D0;
   color: white;
@@ -729,30 +729,31 @@
 }
 .menu__categorie3 button:nth-of-type(1) {
   animation-name: emerge;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 0.9s;
+  animation-delay: 2.4s;
 }
 .menu__categorie3 button:nth-of-type(2) {
   animation-name: emerge;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 1.3s;
+  animation-delay: 2.8s;
 }
 .menu__categorie3 button:nth-of-type(3) {
   animation-name: emerge;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 1.7s;
+  animation-delay: 3.2s;
 }
 .menu__categorie3 button:nth-of-type(4) {
   animation-name: emerge;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 2.1s;
+  animation-delay: 3.6s;
 }
 .menu__categorie3__btn {
   width: 100%;
+  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -796,6 +797,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: bold;
 }
 .menu__categorie3__btn__detail-txt p {
   max-width: 100%;
@@ -818,6 +820,7 @@
 }
 .menu__categorie3__btn__check {
   font-size: 200%;
+  height: 100%;
   border-radius: 0 17px 17px 0;
   border: 0 1px 1px 1px solid #99E2D0;
   color: white;
@@ -877,10 +880,15 @@
     justify-content: center;
   }
   .menu__name h1 {
-    flex: 2;
     padding-right: 25px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+  }
+  .menu .heart-container {
+    flex: unset;
+    justify-content: center;
+    margin-right: -15px;
+    padding-left: 0;
   }
   .menu__categorie1 {
     width: 634px;
