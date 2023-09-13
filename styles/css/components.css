@@ -166,12 +166,12 @@
 
 .heart-color {
   position: relative;
-  z-index: 100;
+  z-index: 1;
   font-size: 150%;
   font-weight: 100;
   transform: scale(1) rotate(0deg);
   transition: font-weight 0.6s cubic-bezier(0.66, 0.19, 0.04, 1), color 0.5s cubic-bezier(0.91, 0.55, 0.48, 0.96);
-  z-index: 100;
+  z-index: 1;
   cursor: pointer;
 }
 .heart-color:hover {
@@ -205,8 +205,8 @@
 }
 .loading::after {
   content: "";
-  width: 60px;
-  height: 60px;
+  width: 200px;
+  height: 200px;
   border: 10px double white;
   border-radius: 50%;
   border-top-color: #99E2D0;
