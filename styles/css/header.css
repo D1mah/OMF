@@ -15,11 +15,13 @@
   justify-self: left;
   align-self: center;
   padding-left: 20px;
+}
+.header__arrow i {
   transform: scale(1) translate(0);
   transition: transform 0.4s cubic-bezier(0, 1.04, 0.54, 1.06);
 }
-.header__arrow:hover {
-  transform: scale(1.15);
+.header__arrow i:hover {
+  transform: scale(1.15) translate(-15px);
   transition-duration: 0.4s;
 }
 .header__title {
