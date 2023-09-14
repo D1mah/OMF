@@ -69,7 +69,7 @@
             }
             
             @for $i from 1 through $nbOfBtnMax{
-                & button:nth-of-type(#{$i}){
+                & .button:nth-of-type(#{$i}){
                     animation-name: emerge;
                     animation-duration:3s;
                     animation-fill-mode: forwards;

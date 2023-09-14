@@ -94,7 +94,7 @@
                     flex-direction: row;
                     align-items: center;
                     margin-bottom: 25px;
-                    padding-left:35px;
+                    // padding-left:35px;
                     background-color: $background2ndShade;
                     border: 1px $background2ndShade solid;
                     border-radius:18px ;
@@ -114,6 +114,10 @@
                         height:23px;
                         border-radius: 50%;
                         background-color: $primary;
+                    }
+
+                    & .icon{
+                        margin-left:20px;
                     }
                     
                     

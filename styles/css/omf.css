@@ -253,7 +253,6 @@ section {
   flex-direction: row;
   align-items: center;
   margin-bottom: 25px;
-  padding-left: 35px;
   background-color: #f6f6f6;
   border: 1px #f6f6f6 solid;
   border-radius: 18px;
@@ -273,6 +272,9 @@ section {
   height: 23px;
   border-radius: 50%;
   background-color: #9356DC;
+}
+.choices__btn1 .icon {
+  margin-left: 20px;
 }
 .choices__btn1-txt {
   margin-left: 15px;
@@ -298,7 +300,6 @@ section {
   flex-direction: row;
   align-items: center;
   margin-bottom: 25px;
-  padding-left: 35px;
   background-color: #f6f6f6;
   border: 1px #f6f6f6 solid;
   border-radius: 18px;
@@ -318,6 +319,9 @@ section {
   height: 23px;
   border-radius: 50%;
   background-color: #9356DC;
+}
+.choices__btn2 .icon {
+  margin-left: 20px;
 }
 .choices__btn2-txt {
   margin-left: 15px;
@@ -343,7 +347,6 @@ section {
   flex-direction: row;
   align-items: center;
   margin-bottom: 25px;
-  padding-left: 35px;
   background-color: #f6f6f6;
   border: 1px #f6f6f6 solid;
   border-radius: 18px;
@@ -363,6 +366,9 @@ section {
   height: 23px;
   border-radius: 50%;
   background-color: #9356DC;
+}
+.choices__btn3 .icon {
+  margin-left: 20px;
 }
 .choices__btn3-txt {
   margin-left: 15px;
@@ -1115,7 +1121,7 @@ section {
   justify-content: space-between;
   align-items: center;
   padding-top: 5px;
-  padding-left: 10px;
+  padding-left: 15px;
   padding-right: 20px;
 }
 .menu__name h1 {
@@ -1137,25 +1143,25 @@ section {
   text-decoration: underline 3px solid #99E2D0;
   text-underline-offset: 10px;
 }
-.menu__categorie1 button:nth-of-type(1) {
+.menu__categorie1 .button:nth-of-type(1) {
   animation-name: emerge;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-delay: 2.4s;
 }
-.menu__categorie1 button:nth-of-type(2) {
+.menu__categorie1 .button:nth-of-type(2) {
   animation-name: emerge;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-delay: 2.8s;
 }
-.menu__categorie1 button:nth-of-type(3) {
+.menu__categorie1 .button:nth-of-type(3) {
   animation-name: emerge;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-delay: 3.2s;
 }
-.menu__categorie1 button:nth-of-type(4) {
+.menu__categorie1 .button:nth-of-type(4) {
   animation-name: emerge;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -1276,25 +1282,25 @@ section {
   text-decoration: underline 3px solid #99E2D0;
   text-underline-offset: 10px;
 }
-.menu__categorie2 button:nth-of-type(1) {
+.menu__categorie2 .button:nth-of-type(1) {
   animation-name: emerge;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-delay: 2.4s;
 }
-.menu__categorie2 button:nth-of-type(2) {
+.menu__categorie2 .button:nth-of-type(2) {
   animation-name: emerge;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-delay: 2.8s;
 }
-.menu__categorie2 button:nth-of-type(3) {
+.menu__categorie2 .button:nth-of-type(3) {
   animation-name: emerge;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-delay: 3.2s;
 }
-.menu__categorie2 button:nth-of-type(4) {
+.menu__categorie2 .button:nth-of-type(4) {
   animation-name: emerge;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -1415,25 +1421,25 @@ section {
   text-decoration: underline 3px solid #99E2D0;
   text-underline-offset: 10px;
 }
-.menu__categorie3 button:nth-of-type(1) {
+.menu__categorie3 .button:nth-of-type(1) {
   animation-name: emerge;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-delay: 2.4s;
 }
-.menu__categorie3 button:nth-of-type(2) {
+.menu__categorie3 .button:nth-of-type(2) {
   animation-name: emerge;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-delay: 2.8s;
 }
-.menu__categorie3 button:nth-of-type(3) {
+.menu__categorie3 .button:nth-of-type(3) {
   animation-name: emerge;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-delay: 3.2s;
 }
-.menu__categorie3 button:nth-of-type(4) {
+.menu__categorie3 .button:nth-of-type(4) {
   animation-name: emerge;
   animation-duration: 3s;
   animation-fill-mode: forwards;
