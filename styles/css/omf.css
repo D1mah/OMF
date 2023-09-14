@@ -1116,7 +1116,7 @@ section {
   align-items: center;
   padding-top: 5px;
   padding-left: 10px;
-  padding-right: 40px;
+  padding-right: 20px;
 }
 .menu__name h1 {
   font-family: "Shrikhand";
@@ -1188,7 +1188,6 @@ section {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
-  padding-right: 20px;
   border: 2px white solid;
   width: 100%;
 }
@@ -1328,7 +1327,6 @@ section {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
-  padding-right: 20px;
   border: 2px white solid;
   width: 100%;
 }
@@ -1468,7 +1466,6 @@ section {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
-  padding-right: 20px;
   border: 2px white solid;
   width: 100%;
 }
@@ -1584,13 +1581,22 @@ section {
     width: 634px;
     margin: auto;
   }
+  .menu__categorie1__btn__detail {
+    padding-right: 20px;
+  }
   .menu__categorie2 {
     width: 634px;
     margin: auto;
   }
+  .menu__categorie2__btn__detail {
+    padding-right: 20px;
+  }
   .menu__categorie3 {
     width: 634px;
     margin: auto;
+  }
+  .menu__categorie3__btn__detail {
+    padding-right: 20px;
   }
 }
 @media (min-width: 992px) {
@@ -1603,6 +1609,12 @@ section {
     max-width: 100%;
     position: absolute;
     top: -350px;
+  }
+  .img__note-enchantee {
+    position: absolute;
+    z-index: -1;
+    margin-bottom: -200px;
+    margin-top: -73px;
   }
   .menu {
     max-width: 1050px;

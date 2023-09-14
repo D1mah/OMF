@@ -3,6 +3,10 @@
 @font-face {
   font-family: "Roboto";
   src: url("../../assets/polices/Roboto/Roboto-Regular.eot");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.svg");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.ttf");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.woff");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.woff2");
   src: url("../../assets/polices/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/polices/Roboto/Roboto-Regular.woff2") format("woff2"), url("../../assets/polices/Roboto/Roboto-Regular.woff") format("woff"), url("../../assets/polices/Roboto/Roboto-Regular.ttf") format("truetype"), url("../../assets/polices/Roboto/Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
@@ -11,6 +15,10 @@
 @font-face {
   font-family: "Shrikhand";
   src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.eot");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.svg");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff2");
   src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff2") format("woff2"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff") format("woff"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.ttf") format("truetype"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.svg#Shrikhand-Regular") format("svg");
   font-weight: normal;
   font-style: italic;
@@ -20,6 +28,10 @@
 @font-face {
   font-family: "Roboto";
   src: url("../../assets/polices/Roboto/Roboto-Regular.eot");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.svg");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.ttf");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.woff");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.woff2");
   src: url("../../assets/polices/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/polices/Roboto/Roboto-Regular.woff2") format("woff2"), url("../../assets/polices/Roboto/Roboto-Regular.woff") format("woff"), url("../../assets/polices/Roboto/Roboto-Regular.ttf") format("truetype"), url("../../assets/polices/Roboto/Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
@@ -28,6 +40,10 @@
 @font-face {
   font-family: "Shrikhand";
   src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.eot");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.svg");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff2");
   src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff2") format("woff2"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff") format("woff"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.ttf") format("truetype"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.svg#Shrikhand-Regular") format("svg");
   font-weight: normal;
   font-style: italic;
@@ -37,6 +53,10 @@
 @font-face {
   font-family: "Roboto";
   src: url("../../assets/polices/Roboto/Roboto-Regular.eot");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.svg");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.ttf");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.woff");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.woff2");
   src: url("../../assets/polices/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/polices/Roboto/Roboto-Regular.woff2") format("woff2"), url("../../assets/polices/Roboto/Roboto-Regular.woff") format("woff"), url("../../assets/polices/Roboto/Roboto-Regular.ttf") format("truetype"), url("../../assets/polices/Roboto/Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
@@ -45,6 +65,10 @@
 @font-face {
   font-family: "Shrikhand";
   src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.eot");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.svg");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff2");
   src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff2") format("woff2"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff") format("woff"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.ttf") format("truetype"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.svg#Shrikhand-Regular") format("svg");
   font-weight: normal;
   font-style: italic;
@@ -148,6 +172,32 @@
     transform: scale(1.15);
   }
 }
+.heart-color {
+  position: relative;
+  z-index: 1;
+  font-size: 150%;
+  font-weight: 100;
+  transform: scale(1) rotate(0deg);
+  z-index: 1;
+  cursor: pointer;
+}
+.heart-color:hover {
+  cursor: pointer;
+  animation-name: growing_heart;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards;
+}
+.heart-color:hover:before {
+  transition: all 0.8s ease-in-out;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 .heart-container {
   animation: emerging_element 2.3s;
   flex: 1;
@@ -165,32 +215,6 @@
   margin-right: 20px;
 }
 
-.heart-color {
-  position: relative;
-  z-index: 100;
-  font-size: 150%;
-  font-weight: 100;
-  transform: scale(1) rotate(0deg);
-  transition: font-weight 0.6s cubic-bezier(0.66, 0.19, 0.04, 1), color 0.5s cubic-bezier(0.91, 0.55, 0.48, 0.96);
-  z-index: 100;
-  cursor: pointer;
-}
-.heart-color:hover {
-  cursor: pointer;
-  animation-name: growing_heart;
-  animation-duration: 0.4s;
-  animation-timing-function: ease;
-  animation-fill-mode: backwards;
-}
-.heart-color:hover:before {
-  transition: all 0.8s ease-in-out;
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-weight: 900;
-  background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
-  -webkit-text-fill-color: transparent;
-}
-
 .loading {
   display: flex;
   justify-content: center;
@@ -206,8 +230,8 @@
 }
 .loading::after {
   content: "";
-  width: 60px;
-  height: 60px;
+  width: 200px;
+  height: 200px;
   border: 10px double white;
   border-radius: 50%;
   border-top-color: #99E2D0;
@@ -278,15 +302,14 @@
   font-size: 90%;
 }
 
-@media (min-width: 768px) {
-  .icon {
-    margin-left: 15px;
-  }
-}
 /* Mise en place des différentes polices utilisées */
 @font-face {
   font-family: "Roboto";
   src: url("../../assets/polices/Roboto/Roboto-Regular.eot");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.svg");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.ttf");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.woff");
+  src: url("../../assets/polices/Roboto/Roboto-Regular.woff2");
   src: url("../../assets/polices/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/polices/Roboto/Roboto-Regular.woff2") format("woff2"), url("../../assets/polices/Roboto/Roboto-Regular.woff") format("woff"), url("../../assets/polices/Roboto/Roboto-Regular.ttf") format("truetype"), url("../../assets/polices/Roboto/Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
@@ -295,6 +318,10 @@
 @font-face {
   font-family: "Shrikhand";
   src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.eot");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.svg");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff");
+  src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff2");
   src: url("../../assets/polices/Shrikhand/Shrikhand-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff2") format("woff2"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.woff") format("woff"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.ttf") format("truetype"), url("../../assets/polices/Shrikhand/Shrikhand-Regular.svg#Shrikhand-Regular") format("svg");
   font-weight: normal;
   font-style: italic;
@@ -425,8 +452,8 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 5px;
-  padding-left: 10px;
-  padding-right: 40px;
+  padding-left: 15px;
+  padding-right: 20px;
 }
 .menu__name h1 {
   font-family: "Shrikhand";
@@ -498,7 +525,6 @@
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
-  padding-right: 20px;
   border: 2px white solid;
   width: 100%;
 }
@@ -638,7 +664,6 @@
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
-  padding-right: 20px;
   border: 2px white solid;
   width: 100%;
 }
@@ -778,7 +803,6 @@
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
-  padding-right: 20px;
   border: 2px white solid;
   width: 100%;
 }
@@ -894,13 +918,22 @@
     width: 634px;
     margin: auto;
   }
+  .menu__categorie1__btn__detail {
+    padding-right: 20px;
+  }
   .menu__categorie2 {
     width: 634px;
     margin: auto;
   }
+  .menu__categorie2__btn__detail {
+    padding-right: 20px;
+  }
   .menu__categorie3 {
     width: 634px;
     margin: auto;
+  }
+  .menu__categorie3__btn__detail {
+    padding-right: 20px;
   }
 }
 @media (min-width: 992px) {
@@ -913,6 +946,12 @@
     max-width: 100%;
     position: absolute;
     top: -350px;
+  }
+  .img__note-enchantee {
+    position: absolute;
+    z-index: -1;
+    margin-bottom: -200px;
+    margin-top: -73px;
   }
   .menu {
     max-width: 1050px;
