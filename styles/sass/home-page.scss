@@ -85,7 +85,6 @@
             flex-direction:column;
             align-items:center ;
             justify-content: space-between;
-            margin-left:20px;
 
             @for $i from 1 through 3{
                 &#{$i}{
@@ -367,6 +366,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
+        margin-left:20px;
+
 
         @for $i from 1 through 3{
             &#{$i}{
