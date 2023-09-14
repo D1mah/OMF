@@ -266,6 +266,7 @@
             flex-direction: row;
             justify-content: space-between;
             padding-left:11px;
+            margin-left:0px;
             @for $i from 1 through 3{
                 &#{$i}{
                     width: 250px;
